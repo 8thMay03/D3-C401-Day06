@@ -103,9 +103,9 @@ Nếu sai ngược lại thì chuyện gì xảy ra? *Nếu low recall (precisio
 
 | # | Trigger | Hậu quả | Mitigation |
 |---|---------|---------|------------|
-| 1 | AI trả lời thông tin chính sách CŨ (đã thay đổi) với confidence cao | Tài xế quyết định hành động dựa trên info sai => không lợi nhuận, rủi ro pháp lý | Daily KB sync khi có policy update, confidence-gating, audit manually policy-related answers weekly |
-| 2 | AI hallucinate địa điểm trạm sạc/sửa xe (không tồn tại hoặc sai) | Tài xế lái xe tới, lãng phí xăng/thời gian, thất vọng => churn | Only serve verified locations từ real-time partner DB, no AI generation, strict validation layer before returning |
-| 3 | Volume cao => AI latency chậm (>5s) => tài xế chờ lâu => abandon | Tài xế chuyển sang support/competitor => ROI âm | Scale GPU, implement caching top 100 Q&A, fallback to FAQ static response nếu latency exceed threshold |
+| 1 | AI trả lời thông tin chính sách CŨ (đã thay đổi) với confidence cao | Tài xế quyết định hành động dựa trên info sai => không lợi nhuận, rủi ro pháp lý | Đồng bộ cơ sở tri thức (KB) hằng ngày khi có cập nhật chính sách, áp dụng cơ chế kiểm soát độ tin cậy (confidence-gating), và kiểm tra thủ công các câu trả lời liên quan đến chính sách theo tuần. |
+| 2 | AI hallucinate địa điểm trạm sạc/sửa xe (không tồn tại hoặc sai) | Tài xế lái xe tới, lãng phí xăng/thời gian, thất vọng => churn | Chỉ cung cấp các địa điểm đã được xác thực từ cơ sở dữ liệu đối tác theo thời gian thực, không sử dụng AI để tự sinh dữ liệu; áp dụng lớp kiểm tra và xác thực nghiêm ngặt trước khi trả kết quả. |
+| 3 | Volume cao => AI latency chậm (>5s) => tài xế chờ lâu => abandon | Tài xế chuyển sang support/competitor => ROI âm | Mở rộng (scale)GPU, triển khai cơ chế cache cho 100 câu hỏi & trả lời phổ biến nhất, và chuyển sang phản hồi FAQ tĩnh nếu độ trễ vượt quá ngưỡng cho phép. |
 
 ---
 
