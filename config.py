@@ -1,0 +1,23 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+CHROMA_DIR = BASE_DIR / "chroma_db"
+
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 200
+
+EMBEDDING_MODEL = "text-embedding-3-small"
+LLM_MODEL = "gpt-4o-mini"
+LLM_TEMPERATURE = 0.0
+
+RETRIEVER_TOP_K = 5
+
+SYSTEM_PROMPT = """Bạn là trợ lý AI chuyên về chính sách của ứng dụng XanhSM dành cho tài xế.
+Hãy trả lời câu hỏi dựa trên ngữ cảnh được cung cấp bên dưới.
+Nếu không tìm thấy thông tin trong ngữ cảnh, hãy nói rõ rằng bạn không có thông tin để trả lời.
+Luôn trả lời bằng tiếng Việt, rõ ràng và chính xác.
+
+Ngữ cảnh:
+{context}
+"""
