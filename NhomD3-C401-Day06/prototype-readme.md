@@ -19,11 +19,11 @@ Trợ lý tài xế XanhSM giúp giải đáp các thắc mắc của tài xế 
 ## Phân công
 | Thành viên | Phần | Output |
 |-----------|------|--------|
-| Lưu Thị Ngọc Quỳnh | Canvas, failure modes, dữ liệu | Slide, SPEC.md, data/Quy tắc bảo vệ quyền lợi người tiêu dùng.txt |
+| Lưu Thị Ngọc Quỳnh | Canvas, failure modes, dữ liệu | Slide, SPEC.md, Quy tắc bảo vệ quyền lợi người tiêu dùng.txt |
 | Lưu Quang Lực | Lọc data, crawl dữ liệu | khach_hang.txt, Chính sách bảo vệ dữ liệu cá nhân.txt |
 | Đinh Văn Thư | User Case, trải nghiệm người dùng, crawl dữ liệu | ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt, user-flow-promt.md |
-| Nguyễn Phương Nam | System promt | config.py |
-| Nguyễn Bá Khánh|Nạp dữ liệu cho Agent|ingest.py|
-| Lý Quốc An| Build giao diện|App.py|
-|Nguyễn Quốc Khánh| Tạo logic cho chatbot, lọc dữ liệu|app.py|
-|Nguyễn Quang Minh| Test case | prompt-test-log.md|
+| Nguyễn Phương Nam | System promt, work flow | config.py, spec/eval-metrics.md |
+| Nguyễn Bá Khánh|Nạp dữ liệu cho Agent|ingest.py, document_loader.py|
+| Lý Quốc An| Build giao diện|App.py, chain.py, vector_store.py|
+|Nguyễn Quốc Khánh| Tạo logic cho chatbot, lọc dữ liệu|app.py, embeddings.py, retriever.py, text_splitter.py |
+|Nguyễn Quang Minh| Test case | prompt-test-log.md, test.py|
