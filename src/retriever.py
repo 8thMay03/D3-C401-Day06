@@ -46,6 +46,13 @@ def _minmax_norm(scores: dict[str, float]) -> dict[str, float]:
     return {k: (v - lo) / (hi - lo) for k, v in scores.items()}
 
 
+def _preview(text: str, limit: int = 220) -> str:
+    one_line = " ".join(text.split())
+    if len(one_line) <= limit:
+        return one_line
+    return one_line[:limit].rstrip() + "..."
+
+
 @dataclass
 class _ScoredDoc:
     doc: Document
@@ -115,11 +122,27 @@ class HybridRetriever(BaseRetriever):
 
         return [docs_by_key[k] for (k, _) in merged[: self.final_top_k]]
 
+    def _log_retrieval(self, query: str, docs: list[Document]) -> None:
+        print("\n================ RETRIEVAL DEBUG ================")
+        print(f"Query: {query}")
+        print(f"Retrieved chunks: {len(docs)}")
+        for i, doc in enumerate(docs, start=1):
+            source = str(doc.metadata.get("source", "unknown"))
+            chunk_id = doc.metadata.get("chunk_id")
+            header = f"[{i}] source={source}"
+            if chunk_id is not None:
+                header += f", chunk_id={chunk_id}"
+            print(header)
+            print(f"    {_preview(doc.page_content)}")
+        print("=================================================\n")
+
     def _get_relevant_documents(self, query: str, *, run_manager: Any | None = None) -> list[Document]:
         chunks = self._load_chunks()
         bm25_hits = self._bm25_search(query, chunks)
         dense_hits = self._dense_search(query)
-        return self._merge(bm25_hits, dense_hits)
+        final_docs = self._merge(bm25_hits, dense_hits)
+        self._log_retrieval(query, final_docs)
+        return final_docs
 
 
 def get_retriever() -> BaseRetriever:
