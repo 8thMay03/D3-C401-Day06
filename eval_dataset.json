@@ -1,110 +1,602 @@
 [
-{"id": 1, "question": "Khách hàng có được cho người khác lái xe thuê không?", "ground_truth": "Không, khách hàng không được cho thuê lại xe hoặc cho bất kỳ cá nhân nào điều khiển xe thuê.", "source": "source_1_driver_rules"},
-{"id": 2, "question": "Nếu khách hàng vi phạm quy định của XanhSM thì sẽ thế nào?", "ground_truth": "Khách hàng phải chịu các chế tài được công bố trên nền tảng XanhSM.", "source": "source_1_driver_rules"},
-{"id": 3, "question": "Khách hàng có phải bồi hoàn chi phí cho GSM không?", "ground_truth": "Có, khách hàng phải bồi hoàn toàn bộ chi phí và thiệt hại do hành vi vi phạm gây ra.", "source": "source_1_driver_rules"},
-{"id": 4, "question": "Tiền phạt có thể được trừ vào đâu?", "ground_truth": "Có thể được trừ vào tiền cọc hoặc các khoản tiền khách hàng được nhận.", "source": "source_1_driver_rules"},
-{"id": 5, "question": "Khách hàng có cần tuân thủ tiêu chuẩn dịch vụ không?", "ground_truth": "Có, khách hàng phải tuân thủ đầy đủ tiêu chuẩn dịch vụ và quy tắc ứng xử của XanhSM.", "source": "source_1_driver_rules"},
-{"id": 6, "question": "Nếu gây thiệt hại cho bên thứ ba thì ai chịu?", "ground_truth": "Khách hàng phải chịu toàn bộ thiệt hại trực tiếp và gián tiếp.", "source": "source_1_driver_rules"},
-{"id": 7, "question": "Khách hàng có nghĩa vụ gì ngoài hợp đồng?", "ground_truth": "Phải thực hiện các nghĩa vụ theo hợp đồng, chính sách dịch vụ và pháp luật.", "source": "source_1_driver_rules"},
-{"id": 8, "question": "GSM có quyền thu lại tiền từ khách hàng không?", "ground_truth": "Có, GSM có thể cấn trừ chi phí vào tiền cọc hoặc khoản thu của khách hàng.", "source": "source_1_driver_rules"},
-{"id": 9, "question": "Khách hàng có phải chịu trách nhiệm nếu tài xế vi phạm không?", "ground_truth": "Khách hàng phải đảm bảo tài xế tuân thủ quy định và không vi phạm.", "source": "source_1_driver_rules"},
-{"id": 10, "question": "Quy tắc ứng xử được công bố ở đâu?", "ground_truth": "Trên website và ứng dụng XanhSM.", "source": "source_1_driver_rules"},
-{"id": 11, "question": "Khách hàng có được vi phạm quy định tài xế không?", "ground_truth": "Không, phải đảm bảo tài xế cũng tuân thủ quy định.", "source": "source_1_driver_rules"},
-
-{"id": 12, "question": "Sự kiện bất khả kháng bao gồm những gì?", "ground_truth": "Bao gồm thiên tai, chiến tranh, dịch bệnh, thay đổi chính sách và các sự kiện khách quan khác.", "source": "source_2_force_majeure"},
-{"id": 13, "question": "Khách hàng có được miễn trách nhiệm khi xảy ra bất khả kháng không?", "ground_truth": "Có, nếu đáp ứng điều kiện về kiểm soát, phòng ngừa và thông báo.", "source": "source_2_force_majeure"},
-{"id": 14, "question": "Điều kiện đầu tiên để được miễn trách nhiệm là gì?", "ground_truth": "Sự kiện nằm ngoài kiểm soát và không do lỗi của khách hàng.", "source": "source_2_force_majeure"},
-{"id": 15, "question": "Khách hàng phải làm gì khi có sự kiện bất khả kháng?", "ground_truth": "Phải áp dụng biện pháp khắc phục và thông báo ngay cho GSM.", "source": "source_2_force_majeure"},
-{"id": 16, "question": "Nếu bất khả kháng kéo dài hơn 60 ngày thì sao?", "ground_truth": "Bên nào cũng có quyền chấm dứt hợp đồng bằng văn bản.", "source": "source_2_force_majeure"},
-{"id": 17, "question": "Thông báo bất khả kháng có bắt buộc không?", "ground_truth": "Có, phải thông báo ngay cho GSM.", "source": "source_2_force_majeure"},
-{"id": 18, "question": "Nếu không thông báo thì có được miễn trách nhiệm không?", "ground_truth": "Không, phải đáp ứng đầy đủ điều kiện bao gồm thông báo.", "source": "source_2_force_majeure"},
-{"id": 19, "question": "Khách hàng có cần giảm thiểu thiệt hại không?", "ground_truth": "Có, phải áp dụng mọi biện pháp cần thiết để giảm thiệt hại.", "source": "source_2_force_majeure"},
-{"id": 20, "question": "Dịch bệnh có được coi là bất khả kháng không?", "ground_truth": "Có.", "source": "source_2_force_majeure"},
-{"id": 21, "question": "Chiến tranh có được coi là bất khả kháng không?", "ground_truth": "Có.", "source": "source_2_force_majeure"},
-{"id": 22, "question": "Thay đổi pháp luật có được coi là bất khả kháng không?", "ground_truth": "Có.", "source": "source_2_force_majeure"},
-
-{"id": 23, "question": "Hợp đồng có thể sửa đổi khi nào?", "ground_truth": "Khi có thỏa thuận giữa các bên hoặc theo pháp luật.", "source": "source_3_contract"},
-{"id": 24, "question": "Hợp đồng chấm dứt khi nào?", "ground_truth": "Khi hết hạn, có thông báo, thỏa thuận hoặc vi phạm.", "source": "source_3_contract"},
-{"id": 25, "question": "Khách hàng muốn chấm dứt hợp đồng cần làm gì?", "ground_truth": "Phải thông báo trước 30 ngày và thanh toán đầy đủ chi phí.", "source": "source_3_contract"},
-{"id": 26, "question": "GSM có thể chấm dứt hợp đồng ngay không?", "ground_truth": "Có, nếu khách hàng vi phạm nghĩa vụ.", "source": "source_3_contract"},
-{"id": 27, "question": "Vi phạm thanh toán có bị chấm dứt hợp đồng không?", "ground_truth": "Có.", "source": "source_3_contract"},
-{"id": 28, "question": "Sau khi chấm dứt hợp đồng, tiền cọc có được giữ không?", "ground_truth": "Có, cho đến khi hoàn thành nghĩa vụ.", "source": "source_3_contract"},
-{"id": 29, "question": "Thời hạn hoàn thành nghĩa vụ sau chấm dứt là bao lâu?", "ground_truth": "Tối đa 30 ngày làm việc.", "source": "source_3_contract"},
-{"id": 30, "question": "Nếu không hoàn thành nghĩa vụ thì sao?", "ground_truth": "GSM có thể thực hiện thay và trừ vào tiền cọc.", "source": "source_3_contract"},
-{"id": 31, "question": "Hợp đồng có tự động gia hạn không?", "ground_truth": "Có, thêm 12 tháng nếu không có thông báo.", "source": "source_3_contract"},
-{"id": 32, "question": "Sau thanh lý hợp đồng, khách hàng còn trách nhiệm không?", "ground_truth": "Có, với nghĩa vụ phát sinh trước đó.", "source": "source_3_contract"},
-{"id": 33, "question": "Thông báo nghĩa vụ sau hợp đồng trong bao lâu?", "ground_truth": "10 ngày kể từ khi nhận thông báo.", "source": "source_3_contract"},
-
-{"id": 34, "question": "Tiền cọc phải nộp khi nào?", "ground_truth": "Trong 10 ngày làm việc từ ngày ký hợp đồng.", "source": "source_4_payment"},
-{"id": 35, "question": "Tiền cọc có được tính lãi không?", "ground_truth": "Không.", "source": "source_4_payment"},
-{"id": 36, "question": "Khi nào được hoàn tiền cọc?", "ground_truth": "Trong 30 ngày sau khi hoàn tất công nợ.", "source": "source_4_payment"},
-{"id": 37, "question": "Nếu tiền cọc không đủ thì sao?", "ground_truth": "Khách hàng phải thanh toán phần còn thiếu.", "source": "source_4_payment"},
-{"id": 38, "question": "Phí dịch vụ có bao gồm VAT không?", "ground_truth": "Có.", "source": "source_4_payment"},
-{"id": 39, "question": "Phí cầu đường có nằm trong phí dịch vụ không?", "ground_truth": "Không, nhưng được đối soát cùng.", "source": "source_4_payment"},
-{"id": 40, "question": "GSM có thể tạm ngừng dịch vụ khi nào?", "ground_truth": "Khi vượt hạn mức công nợ.", "source": "source_4_payment"},
-{"id": 41, "question": "Thời gian thanh toán hóa đơn là bao lâu?", "ground_truth": "5 ngày làm việc hoặc trước ngày 15 hàng tháng.", "source": "source_4_payment"},
-{"id": 42, "question": "Lãi chậm trả là bao nhiêu?", "ground_truth": "0,05% mỗi ngày.", "source": "source_4_payment"},
-{"id": 43, "question": "Khách hàng có thể xem chi tiết chuyến xe không?", "ground_truth": "Có, qua TKQL.", "source": "source_4_payment"},
-{"id": 44, "question": "Nếu không phản hồi đối soát thì sao?", "ground_truth": "Được xem là đồng ý.", "source": "source_4_payment"},
-
-{"id": 45, "question": "GSM có trách nhiệm gì với tài xế?", "ground_truth": "Đảm bảo tài xế có bằng lái hợp lệ và phục vụ chuyên nghiệp.", "source": "source_5_rights"},
-{"id": 46, "question": "GSM có phải mua bảo hiểm không?", "ground_truth": "Có.", "source": "source_5_rights"},
-{"id": 47, "question": "Khách hàng có chịu trách nhiệm nếu xe bị mất không?", "ground_truth": "Không.", "source": "source_5_rights"},
-{"id": 48, "question": "Ai chịu trách nhiệm nếu khách bị thiệt hại do lỗi GSM?", "ground_truth": "GSM.", "source": "source_5_rights"},
-{"id": 49, "question": "Khách hàng có quyền yêu cầu sửa phí không?", "ground_truth": "Có.", "source": "source_5_rights"},
-{"id": 50, "question": "Khách hàng phải làm gì nếu gây hư hỏng xe?", "ground_truth": "Phải bồi thường.", "source": "source_5_rights"},
-{"id": 51, "question": "Ai quyết định mức bồi thường?", "ground_truth": "GSM hoặc đơn vị sửa chữa.", "source": "source_5_rights"},
-{"id": 52, "question": "Khách hàng có nghĩa vụ thanh toán không?", "ground_truth": "Có.", "source": "source_5_rights"},
-{"id": 53, "question": "Tài xế có cần tuân thủ luật giao thông không?", "ground_truth": "Có.", "source": "source_5_rights"},
-{"id": 54, "question": "GSM có phải cung cấp dịch vụ đúng hợp đồng không?", "ground_truth": "Có.", "source": "source_5_rights"},
-{"id": 55, "question": "Khách có quyền kiểm tra hóa đơn không?", "ground_truth": "Có.", "source": "source_5_rights"},
-
-{"id": 56, "question": "Mức phạt vi phạm hợp đồng là bao nhiêu?", "ground_truth": "8% giá trị nghĩa vụ vi phạm.", "source": "source_6_penalty"},
-{"id": 57, "question": "Có phải bồi thường ngoài phạt không?", "ground_truth": "Có, bồi thường thiệt hại thực tế.", "source": "source_6_penalty"},
-{"id": 58, "question": "Thời hạn thanh toán bồi thường là bao lâu?", "ground_truth": "10 ngày.", "source": "source_6_penalty"},
-{"id": 59, "question": "Có áp dụng phạt khi bất khả kháng không?", "ground_truth": "Không.", "source": "source_6_penalty"},
-{"id": 60, "question": "Thiệt hại nào được bồi thường?", "ground_truth": "Thiệt hại trực tiếp.", "source": "source_6_penalty"},
-{"id": 61, "question": "Có bồi thường thiệt hại gián tiếp không?", "ground_truth": "Không.", "source": "source_6_penalty"},
-{"id": 62, "question": "Phạt áp dụng khi nào?", "ground_truth": "Khi vi phạm nghĩa vụ hợp đồng.", "source": "source_6_penalty"},
-{"id": 63, "question": "Có cần chứng minh thiệt hại không?", "ground_truth": "Có.", "source": "source_6_penalty"},
-{"id": 64, "question": "Nếu vi phạm nhẹ có bị phạt không?", "ground_truth": "Có, nếu vi phạm nghĩa vụ.", "source": "source_6_penalty"},
-{"id": 65, "question": "Có thể vừa phạt vừa bồi thường không?", "ground_truth": "Có.", "source": "source_6_penalty"},
-{"id": 66, "question": "Phạt tính theo giá trị nào?", "ground_truth": "Giá trị nghĩa vụ bị vi phạm.", "source": "source_6_penalty"},
-
-{"id": 67, "question": "Thông tin mật bao gồm những gì?", "ground_truth": "Bao gồm dữ liệu, hợp đồng, bí mật kinh doanh và thông tin liên quan.", "source": "source_7_confidential"},
-{"id": 68, "question": "Có được tiết lộ thông tin mật không?", "ground_truth": "Không, trừ khi có sự đồng ý.", "source": "source_7_confidential"},
-{"id": 69, "question": "Khi nào được phép tiết lộ thông tin?", "ground_truth": "Khi theo yêu cầu pháp luật hoặc đã công khai.", "source": "source_7_confidential"},
-{"id": 70, "question": "Có thể chia sẻ cho nhân viên không?", "ground_truth": "Có, nếu phục vụ hợp đồng và đảm bảo bảo mật.", "source": "source_7_confidential"},
-{"id": 71, "question": "Vi phạm bảo mật có hậu quả gì?", "ground_truth": "Phải bồi thường thiệt hại lớn.", "source": "source_7_confidential"},
-{"id": 72, "question": "Thông tin công khai có phải bảo mật không?", "ground_truth": "Không.", "source": "source_7_confidential"},
-{"id": 73, "question": "Có cần bảo mật sau khi hợp đồng kết thúc không?", "ground_truth": "Có.", "source": "source_7_confidential"},
-{"id": 74, "question": "Có thể nhận thông tin từ bên thứ ba không?", "ground_truth": "Có, nếu không có nghĩa vụ bảo mật.", "source": "source_7_confidential"},
-{"id": 75, "question": "Có thể bị kiện vì lộ thông tin không?", "ground_truth": "Có.", "source": "source_7_confidential"},
-{"id": 76, "question": "Thông tin tài chính có phải bảo mật không?", "ground_truth": "Có.", "source": "source_7_confidential"},
-{"id": 77, "question": "Bên nhận thông tin có trách nhiệm gì?", "ground_truth": "Phải bảo mật tuyệt đối.", "source": "source_7_confidential"},
-
-{"id": 78, "question": "Có được hối lộ nhân sự GSM không?", "ground_truth": "Không.", "source": "source_8_anti_corruption"},
-{"id": 79, "question": "Nếu phát hiện hối lộ phải làm gì?", "ground_truth": "Phải báo qua email thanh tra.", "source": "source_8_anti_corruption"},
-{"id": 80, "question": "Mức phạt hối lộ là bao nhiêu?", "ground_truth": "150 triệu hoặc 10% hợp đồng.", "source": "source_8_anti_corruption"},
-{"id": 81, "question": "Có thể bị chấm dứt hợp đồng vì hối lộ không?", "ground_truth": "Có.", "source": "source_8_anti_corruption"},
-{"id": 82, "question": "Có thể bị chuyển cơ quan điều tra không?", "ground_truth": "Có.", "source": "source_8_anti_corruption"},
-{"id": 83, "question": "Có phải hoàn trả tiền đã nhận không?", "ground_truth": "Có.", "source": "source_8_anti_corruption"},
-{"id": 84, "question": "Có bị cấm tham gia thầu không?", "ground_truth": "Có.", "source": "source_8_anti_corruption"},
-{"id": 85, "question": "Có phải bồi thường thiệt hại không?", "ground_truth": "Có.", "source": "source_8_anti_corruption"},
-{"id": 86, "question": "KH có trách nhiệm gì khi vi phạm?", "ground_truth": "Phải bồi thường toàn bộ thiệt hại.", "source": "source_8_anti_corruption"},
-{"id": 87, "question": "Có thể thông qua bên thứ ba hối lộ không?", "ground_truth": "Không.", "source": "source_8_anti_corruption"},
-{"id": 88, "question": "Có miễn trừ trách nhiệm cho GSM không?", "ground_truth": "Có.", "source": "source_8_anti_corruption"},
-
-{"id": 89, "question": "Hàng hóa phải đáp ứng điều kiện gì?", "ground_truth": "Không thuộc hàng cấm và có đầy đủ thông tin.", "source": "source_9_delivery"},
-{"id": 90, "question": "Ai chịu trách nhiệm đóng gói hàng?", "ground_truth": "Người dùng.", "source": "source_9_delivery"},
-{"id": 91, "question": "Nếu thông tin sai thì ai chịu?", "ground_truth": "Người dùng.", "source": "source_9_delivery"},
-{"id": 92, "question": "Đối tác có thể từ chối hàng không?", "ground_truth": "Có, nếu hàng nguy hiểm hoặc vi phạm.", "source": "source_9_delivery"},
-{"id": 93, "question": "Hàng hóa có cần giấy tờ không?", "ground_truth": "Có.", "source": "source_9_delivery"},
-{"id": 94, "question": "Nếu hàng bị hư hỏng do đóng gói sai?", "ground_truth": "Người dùng chịu trách nhiệm.", "source": "source_9_delivery"},
-{"id": 95, "question": "Có được vận chuyển hàng cấm không?", "ground_truth": "Không.", "source": "source_9_delivery"},
-{"id": 96, "question": "Nếu mất hàng thì bồi thường thế nào?", "ground_truth": "Theo hóa đơn hoặc tối đa 2 triệu nếu có hóa đơn.", "source": "source_9_delivery"},
-{"id": 97, "question": "Nếu không có hóa đơn thì sao?", "ground_truth": "Bồi thường 4 lần cước phí.", "source": "source_9_delivery"},
-{"id": 98, "question": "Thời hạn khiếu nại mất hàng là bao lâu?", "ground_truth": "6 tháng.", "source": "source_9_delivery"},
-{"id": 99, "question": "Có bảo hiểm cho hàng hóa không?", "ground_truth": "Có, theo gói bảo hiểm.", "source": "source_9_delivery"},
-{"id": 100, "question": "Nếu mua bảo hiểm thì bồi thường thế nào?", "ground_truth": "Theo chính sách bảo hiểm và giới hạn từng gói.", "source": "source_9_delivery"}
+  {
+    "id": 1,
+    "question": "Dữ liệu cá nhân được định nghĩa như thế nào trong chính sách của GSM?",
+    "ground_truth": "Dữ liệu cá nhân là thông tin dưới dạng ký hiệu, chữ viết, chữ số, hình ảnh, âm thanh hoặc dạng tương tự trên môi trường điện tử gắn liền với con người cụ thể hoặc giúp xác định con người cụ thể, bao gồm dữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 2,
+    "question": "Chủ thể dữ liệu cá nhân bao gồm những đối tượng nào?",
+    "ground_truth": "Chủ thể dữ liệu cá nhân là cá nhân được dữ liệu phản ánh, bao gồm khách hàng cá nhân sử dụng sản phẩm dịch vụ, người lao động, cộng tác viên, người học nghề, đối tác, người dùng nền tảng website/ứng dụng, cổ đông và các cá nhân khác có quan hệ pháp lý hoặc có dữ liệu được công ty xử lý.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 3,
+    "question": "Xử lý dữ liệu cá nhân bao gồm những hoạt động nào?",
+    "ground_truth": "Xử lý dữ liệu cá nhân là một hoặc nhiều hoạt động tác động tới dữ liệu như thu thập, ghi, phân tích, xác nhận, lưu trữ, chỉnh sửa, công khai, kết hợp, truy cập, truy xuất, thu hồi, mã hóa, giải mã, sao chép, chia sẻ, truyền đưa, cung cấp, chuyển giao, xóa, hủy hoặc các hành động liên quan khác.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 4,
+    "question": "Công ty có trách nhiệm kiểm tra tính hợp pháp của sự đồng ý khi dữ liệu của người liên quan được cung cấp không?",
+    "ground_truth": "Không. Công ty không có trách nhiệm thẩm định tính hợp pháp của sự đồng ý/chấp thuận. Việc lưu trữ bằng chứng và đảm bảo tính hợp pháp thuộc trách nhiệm của chủ thể dữ liệu và người liên quan.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 5,
+    "question": "Khi nào chủ thể dữ liệu được coi là đã đồng ý với chính sách?",
+    "ground_truth": "Khi đăng ký sử dụng sản phẩm, dịch vụ, giao kết hợp đồng hoặc cho phép công ty xử lý dữ liệu cá nhân mà không có ý kiến khác bằng văn bản, chủ thể dữ liệu được coi là đã đọc, hiểu và chấp nhận toàn bộ nội dung chính sách.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 6,
+    "question": "Nếu không đồng ý với bản cập nhật của chính sách, chủ thể dữ liệu có thể làm gì?",
+    "ground_truth": "Chủ thể dữ liệu có quyền gửi văn bản để rút lại sự chấp thuận với chính sách và/hoặc chấm dứt giao dịch, thỏa thuận hoặc hợp đồng với công ty.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 7,
+    "question": "Nêu các nguyên tắc chính mà công ty cam kết khi xử lý dữ liệu cá nhân.",
+    "ground_truth": "Công ty cam kết: (i) xử lý theo pháp luật Việt Nam và các thỏa thuận; (ii) thu thập với mục đích cụ thể, rõ ràng, hợp pháp; (iii) áp dụng biện pháp kỹ thuật đảm bảo an toàn dữ liệu; (iv) lưu trữ phù hợp và cần thiết; (v) tuân thủ quy định bảo vệ dữ liệu trẻ em.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 8,
+    "question": "Những loại dữ liệu nào được coi là dữ liệu cá nhân cơ bản?",
+    "ground_truth": "Bao gồm: họ tên, ngày sinh, giới tính, địa chỉ, quốc tịch, hình ảnh, số điện thoại và giấy tờ định danh, nghề nghiệp, tình trạng hôn nhân, thông tin gia đình, thông tin tài khoản số và lịch sử hoạt động mạng, cùng các thông tin khác giúp xác định cá nhân.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 9,
+    "question": "Dữ liệu cá nhân nhạy cảm bao gồm những gì?",
+    "ground_truth": "Bao gồm: quan điểm chính trị, tôn giáo, tình trạng sức khỏe, nguồn gốc chủng tộc/dân tộc, dữ liệu di truyền, đặc điểm sinh học, dữ liệu tội phạm, thông tin tài khoản ngân hàng và thanh toán, dữ liệu vị trí và các dữ liệu đặc thù khác theo pháp luật.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 10,
+    "question": "Mục đích xử lý dữ liệu cá nhân của công ty bao gồm những nhóm chính nào?",
+    "ground_truth": "Bao gồm: đánh giá cung cấp dịch vụ, thực hiện hợp đồng và hỗ trợ khách hàng, nâng cao chất lượng sản phẩm dịch vụ, phục vụ vận hành kinh doanh, tái cấu trúc/chuyển nhượng, tiếp thị quảng bá, phòng chống vi phạm, bảo vệ quyền lợi hợp pháp và tuân thủ pháp luật.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 11,
+    "question": "Dữ liệu cá nhân được thu thập từ những nguồn nào?",
+    "ground_truth": "Bao gồm: từ website/app của công ty, từ việc sử dụng sản phẩm dịch vụ, từ tương tác liên lạc, từ mạng xã hội, từ thiết bị ghi âm ghi hình, từ công nghệ tự động như cookie/pixel và từ nguồn công khai hoặc đối tác.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 12,
+    "question": "Trong trường hợp nào công ty có thể không xóa dữ liệu cá nhân dù có yêu cầu?",
+    "ground_truth": "Bao gồm: khi pháp luật yêu cầu lưu trữ, dữ liệu do cơ quan nhà nước xử lý, dữ liệu đã công khai, phục vụ nghiên cứu hoặc thống kê, tình huống khẩn cấp về an ninh/xã hội/y tế, hoặc để bảo vệ tính mạng, sức khỏe của cá nhân.",
+    "source": "Chính sách bảo vệ dữ liệu cá nhân.txt"
+  },
+  {
+    "id": 13,
+    "question": "Tài xế có thể chạy đồng thời Xanh SM Taxi và Xanh SM Bike không?",
+    "ground_truth": "Không. Trong cùng một thời điểm, tài xế chỉ được hoạt động một loại dịch vụ. Nếu muốn chuyển đổi phải làm thủ tục chuyển đổi.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 14,
+    "question": "Những giấy tờ cần thiết để đăng ký tài khoản Xanh SM Bike là gì?",
+    "ground_truth": "Bao gồm: CCCD/CMND/hộ chiếu còn hạn ít nhất 1 tháng, bằng lái A1/A2, lý lịch tư pháp (LLTP số 02 bản gốc hoặc giấy hẹn, hoặc LLTP số 01 không quá 6 tháng), tài khoản ngân hàng chính chủ và sim chính chủ.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 15,
+    "question": "Tài xế có được giữ giấy đăng ký xe (cavet) không?",
+    "ground_truth": "Tài xế được giữ bản sao giấy đăng ký xe.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 16,
+    "question": "Các lợi ích chính khi sử dụng ứng dụng Xanh SM Bike là gì?",
+    "ground_truth": "Bao gồm: thu nhập ổn định, không ràng buộc thời gian, có chính sách chăm lo gia đình tài xế, được cung cấp xe và hỗ trợ bảo dưỡng khi gặp vấn đề.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 17,
+    "question": "Tài xế có cần trả phí thuê pin khi sử dụng xe không?",
+    "ground_truth": "Không cần, vì pin đã có sẵn trong xe để sử dụng.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 18,
+    "question": "Quy định về việc chia sẻ tài khoản tài xế như thế nào?",
+    "ground_truth": "Tuyệt đối không được chia sẻ tài khoản. Nếu vi phạm sẽ bị khóa tài khoản và ngừng hợp tác vĩnh viễn.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 19,
+    "question": "Điều gì xảy ra nếu tài xế không phát sinh doanh số trong 3 ngày liên tiếp tại Hà Nội?",
+    "ground_truth": "Tài xế sẽ bị thu hồi xe theo chính sách khoán doanh số.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 20,
+    "question": "Chi phí sạc pin xe máy điện VinFast tại trạm sạc công cộng là bao nhiêu?",
+    "ground_truth": "Chi phí từ 3.210,9 đồng/kWh. Sạc đầy từ 0% đến 100% dự kiến khoảng 11.240 VNĐ mỗi lần.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 21,
+    "question": "Nếu tài xế chiếm chỗ trạm sạc sau khi pin đã đầy thì bị tính phí như thế nào?",
+    "ground_truth": "Từ phút thứ 31 sau khi pin đầy, sẽ bị tính phí 1.000 đồng mỗi phút.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 22,
+    "question": "Tài xế cần làm gì khi hành khách để quên đồ trên xe?",
+    "ground_truth": "Cung cấp thông tin và số điện thoại cho bộ phận CSKH để hành khách liên hệ nhận lại đồ. Nếu chưa xác định được chủ, ghi chú thời điểm và mang đến trung tâm hỗ trợ.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 23,
+    "question": "Tài xế có bắt buộc mặc đồng phục khi chạy xe không?",
+    "ground_truth": "Có. Tài xế phải mặc đầy đủ trang bị để đảm bảo an toàn và tính chuyên nghiệp. Không mặc đúng sẽ ảnh hưởng chất lượng dịch vụ.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 24,
+    "question": "Tài xế có được sử dụng xe Xanh SM Bike để chạy các ứng dụng khác không?",
+    "ground_truth": "Không. Tài xế không được dùng xe máy điện của Xanh SM Bike để chạy song song với các ứng dụng khác.",
+    "source": "Dành cho tài xế bike.txt"
+  },
+  {
+    "id": 25,
+    "question": "Hợp đồng dịch vụ giữa các bên được hình thành như thế nào?",
+    "ground_truth": "Hợp đồng được hình thành khi Người Dùng yêu cầu cung cấp Dịch Vụ qua Ứng Dụng và Đơn Vị Kinh Doanh Vận Tải chấp nhận yêu cầu, qua đó các bên đồng ý với Điều Khoản Cụ Thể và Điều Khoản Chung.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 26,
+    "question": "“Luật Áp Dụng” được hiểu như thế nào?",
+    "ground_truth": "Là tất cả các luật, quy định, nghị định, quy tắc giao thông, giấy phép và yêu cầu của cơ quan có thẩm quyền có hiệu lực trong thời hạn hợp đồng.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 27,
+    "question": "“Phí” trong hợp đồng bao gồm những gì?",
+    "ground_truth": "Gồm phí đường bộ, phí đỗ xe, phí ra vào các khu vực, các khoản phí Người Dùng phải hoàn lại cho Tài Xế và các khoản thuế liên quan theo luật.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 28,
+    "question": "“Xanh SM” trong hợp đồng là gì?",
+    "ground_truth": "Là Công ty Cổ phần Di chuyển xanh và thông minh GSM, hoạt động theo giấy phép đăng ký doanh nghiệp do Sở KH&ĐT Hà Nội cấp.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 29,
+    "question": "“Dịch Vụ” trong hợp đồng được định nghĩa như thế nào?",
+    "ground_truth": "Là dịch vụ vận chuyển hành khách bằng xe ô tô theo hợp đồng điện tử do Tài Xế thay mặt Đơn Vị Kinh Doanh Vận Tải cung cấp qua Ứng Dụng.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 30,
+    "question": "Tài xế có quyền từ chối cung cấp dịch vụ trong trường hợp nào?",
+    "ground_truth": "Tài xế có quyền từ chối nếu Người Dùng có hành vi vi phạm hợp đồng, pháp luật, không thanh toán hoặc gây nguy hiểm.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 31,
+    "question": "Người dùng có nghĩa vụ gì liên quan đến thanh toán?",
+    "ground_truth": "Người Dùng phải thanh toán đầy đủ, nhanh chóng Cước Phí Người Dùng và các khoản phí theo Điều Kiện.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 32,
+    "question": "Người dùng có được hủy dịch vụ không?",
+    "ground_truth": "Có thể hủy trước khi bắt đầu chuyến xe nếu được ứng dụng cho phép, nhưng có thể phải chịu phí hủy theo quy định.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 33,
+    "question": "Tài xế có được yêu cầu Người dùng thắt dây an toàn không?",
+    "ground_truth": "Có. Tài xế có quyền yêu cầu Người Dùng thắt dây an toàn trong suốt chuyến xe.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 34,
+    "question": "Người dùng có được sử dụng dịch vụ để vận chuyển hàng hóa không?",
+    "ground_truth": "Không. Người Dùng không được sử dụng Dịch Vụ để vận chuyển hàng hóa hoặc mục đích khác ngoài chở khách.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 35,
+    "question": "Nếu có tranh chấp hợp đồng thì giải quyết như thế nào?",
+    "ground_truth": "Các bên sẽ thương lượng trước, nếu không giải quyết được thì đưa ra Tòa án có thẩm quyền theo pháp luật Việt Nam.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 36,
+    "question": "Xanh SM có trách nhiệm gì trong giải quyết tranh chấp không?",
+    "ground_truth": "Xanh SM không chịu nghĩa vụ trực tiếp nhưng có thể tham gia hỗ trợ giải quyết và tạo điều kiện hòa giải tranh chấp.",
+    "source": "ĐIỀU KHOẢN CHUNG HỢP ĐỒNG DỊCH VỤ.txt"
+  },
+  {
+    "id": 37,
+    "question": "Điều kiện để một đơn hàng được chấp nhận vận chuyển là gì?",
+    "ground_truth": "Một đơn hàng được chấp nhận khi đáp ứng đồng thời các điều kiện: (1) không chứa hàng hóa cấm lưu hành, cấm vận chuyển hoặc hàng nguy hiểm theo quy định pháp luật; (2) có đầy đủ thông tin người gửi, người nhận và các thông tin yêu cầu trên ứng dụng; (3) có đối tác xác nhận lệnh nhận đơn hàng từ ứng dụng; (4) hàng hóa được đóng gói, bọc theo yêu cầu (nếu có).",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 38,
+    "question": "Người dùng có trách nhiệm gì về thông tin đơn hàng?",
+    "ground_truth": "Người dùng chịu trách nhiệm về tính chính xác và đầy đủ của thông tin đơn hàng và hàng hóa đã nhập trên ứng dụng. Xanh SM và đối tác không chịu trách nhiệm nếu đơn hàng giao trễ hoặc không giao được do thông tin người dùng cung cấp bị sai.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 39,
+    "question": "Người dùng cần đảm bảo điều gì khi đóng gói hàng hóa?",
+    "ground_truth": "Người dùng phải đảm bảo hàng hóa được đóng gói đúng quy cách, đầy đủ, xếp gọn, dán nhãn và đánh dấu đúng yêu cầu trước khi gửi vận chuyển.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 40,
+    "question": "Những trường hợp nào đối tác hoặc Xanh SM có quyền từ chối vận chuyển hàng hóa?",
+    "ground_truth": "Đối tác hoặc Xanh SM có quyền từ chối vận chuyển nếu hàng hóa quá khổ có nguy cơ vi phạm luật giao thông, không đảm bảo an toàn, hoặc nghi ngờ thuộc danh mục hàng cấm hoặc không được phép vận chuyển theo pháp luật. Họ cũng có quyền kiểm tra hàng hóa khi có nghi ngờ.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 41,
+    "question": "Giá trị hàng hóa được xác định như thế nào khi tính bồi thường?",
+    "ground_truth": "Giá trị hàng hóa được xác định dựa trên giá trị ghi trên hóa đơn hợp pháp do người bán xuất, với điều kiện mô tả hàng hóa trên hóa đơn phù hợp với mô tả đơn hàng và hóa đơn được lập trước thời điểm gửi hàng. Hóa đơn hợp pháp có thể là hóa đơn GTGT, hóa đơn bán hàng hoặc bộ hồ sơ hải quan đối với hàng nhập khẩu.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 42,
+    "question": "Trong trường hợp người dùng cung cấp hóa đơn hợp pháp, mức bồi thường tối đa cho hàng hóa bị mất hoặc hư hỏng toàn bộ là bao nhiêu?",
+    "ground_truth": "Nếu có hóa đơn hợp pháp, mức bồi thường là 70% giá trị hóa đơn bán ra hoặc 100% giá trị hóa đơn mua vào, nhưng không vượt quá 2.000.000 đồng. Đây là mức trần bồi thường tối đa cho mỗi đơn hàng.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 43,
+    "question": "Nếu người dùng không cung cấp hóa đơn hợp pháp, mức bồi thường được tính như thế nào?",
+    "ground_truth": "Trong trường hợp không cung cấp hóa đơn hợp pháp, mức bồi thường là 4 lần cước phí sử dụng dịch vụ.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 44,
+    "question": "Cách tính bồi thường khi hàng hóa bị hư hỏng một phần là gì?",
+    "ground_truth": "Mức bồi thường một phần được tính bằng mức bồi thường thiệt hại toàn bộ nhân với tỷ lệ hư hỏng. Cụ thể: 30% hư hỏng bồi thường 30%, 30–50% bồi thường 50%, 50–70% bồi thường 70%, trên 70% bồi thường 100%.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 45,
+    "question": "Những trường hợp nào Xanh SM/đối tác không phải bồi thường thiệt hại?",
+    "ground_truth": "Không bồi thường trong các trường hợp: không có chứng từ xác nhận chấp nhận hàng; không có chứng từ chứng minh sử dụng dịch vụ; thiệt hại do lỗi người dùng hoặc do đặc tính tự nhiên hàng hóa; người dùng không chứng minh được việc gửi hoặc hư hỏng; hàng đã giao nhưng người nhận không có ý kiến; hàng bị tịch thu hoặc tiêu hủy theo pháp luật; người dùng không tuân thủ quy trình khiếu nại; hoặc hàng giao tại bến xe.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 46,
+    "question": "Trách nhiệm của đối tác khi tham gia giao hàng là gì?",
+    "ground_truth": "Đối tác phải tuân thủ điều khoản và chính sách của Xanh SM, chấp hành quy tắc giao thông, đảm bảo an toàn cho bản thân và người khác, và chịu trách nhiệm trước pháp luật về việc đảm bảo an toàn phương tiện khi vận chuyển hàng hóa.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 47,
+    "question": "Người dùng có trách nhiệm gì nếu hàng hóa bị mất hoặc hư hỏng do lỗi của mình?",
+    "ground_truth": "Người dùng phải bồi thường toàn bộ thiệt hại nếu hàng hóa bị hư hỏng hoặc gây ảnh hưởng trực tiếp/gián tiếp do lỗi của mình, bao gồm hàng hóa cấm, hàng không đóng gói đúng quy cách gây ảnh hưởng đến hàng khác hoặc bên liên quan.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 48,
+    "question": "Chính sách bảo hiểm hàng hóa áp dụng như thế nào?",
+    "ground_truth": "Người dùng có thể mua bảo hiểm hàng hóa qua ứng dụng. Nếu hàng hóa có giá trị cao bị mất hoặc hư hỏng và đã mua bảo hiểm, mức bồi thường sẽ theo chính sách bảo hiểm nhưng không vượt quá mức tối đa của gói đã chọn (Cơ bản, Bạc, Vàng), với giới hạn bồi thường tối đa lên tới 30.000.000 đồng tùy gói.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 49,
+    "question": "Thời hạn khiếu nại đối với hàng hóa bị mất hoặc hư hỏng là bao lâu?",
+    "ground_truth": "Xanh SM/đối tác chỉ xử lý khiếu nại trong vòng 6 tháng kể từ khi kết thúc thời gian toàn trình (24 giờ sau khi hàng được chấp nhận) đối với mất hàng, và trong vòng 1 tháng kể từ ngày giao hàng đối với hư hỏng hoặc các vấn đề liên quan khác.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 50,
+    "question": "Trong trường hợp hàng hóa bị mất hoặc hư hỏng, thời hạn bồi thường là bao lâu?",
+    "ground_truth": "Bên có lỗi phải bồi thường trong vòng 30 ngày kể từ khi hai bên lập văn bản xác định trách nhiệm bồi thường và người dùng đã cung cấp đầy đủ hóa đơn hợp pháp và chứng từ hợp lệ.",
+    "source": "ĐIỀU KHOẢN CHUNG.txt"
+  },
+  {
+    "id": 51,
+    "question": "Xanh Express Siêu tốc là gì?",
+    "ground_truth": "Xanh Express Siêu tốc là dịch vụ giao hàng nhanh, theo tiêu chuẩn trong hệ thống Xanh SM Bike.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 52,
+    "question": "Dịch vụ Xanh Express COD có đặc điểm gì?",
+    "ground_truth": "Xanh Express COD là dịch vụ giao hàng có thu hộ tiền mặt (COD), chỉ áp dụng cho KGH đã được xác minh, với hạn mức COD tối đa 1.000.000 VNĐ/đơn và tài xế có thể phải ứng tiền COD khi giao cho KNH.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 53,
+    "question": "Phụ phí của dịch vụ giao hàng tận tay (D2D) là bao nhiêu và áp dụng như thế nào?",
+    "ground_truth": "Phụ phí dịch vụ giao hàng tận tay (D2D) là 10.000 VNĐ/đơn, đã được tính vào tổng phí hiển thị trên ứng dụng và áp dụng cho việc giao hàng trực tiếp đến tay người nhận như lên tầng chung cư, phòng làm việc hoặc trường học.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 54,
+    "question": "Quy trình nhận đơn giao hàng siêu tốc gồm những bước nào?",
+    "ground_truth": "Quy trình gồm 4 bước: (1) nhận đơn và kiểm tra thông tin điểm lấy, điểm giao và phương thức thanh toán; (2) đến lấy hàng, xác minh ngoại quan, kích thước và trọng lượng, chụp ảnh xác nhận và thu tiền nếu cần; (3) giao hàng cho KNH, thông báo thời gian giao, chụp ảnh xác nhận; (4) hoàn thành đơn và kiểm tra phản hồi.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 55,
+    "question": "Kích thước và trọng lượng tối đa của hàng hóa tiêu chuẩn trong giao hàng siêu tốc là bao nhiêu?",
+    "ground_truth": "Hàng hóa tiêu chuẩn trong giao hàng siêu tốc có kích thước tối đa 50x40x50 cm và trọng lượng tối đa 30 kg.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 56,
+    "question": "Khi nào tài xế được phép hủy chuyến giao hàng?",
+    "ground_truth": "Tài xế chỉ được hủy chuyến khi chưa bấm 'Đã đến nơi' và phải liên hệ Tổng đài để không ảnh hưởng tỷ lệ hủy. Sau khi đã bấm 'Đã đến nơi', tài xế không thể tự hủy mà phải gọi Tổng đài.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 57,
+    "question": "Quy định thu tiền trong đơn COD như thế nào?",
+    "ground_truth": "Trong đơn COD, nếu KGH thanh toán tiền mặt thì thu cước phí từ KGH trước khi giao hàng. Nếu KNH thanh toán tiền mặt thì tài xế ứng tiền COD để giao hàng và thu lại từ KNH. Nếu thanh toán qua thẻ hoặc ví thì hệ thống tự xử lý và không thu tiền mặt. Tiền ứng COD là tiền của tài xế, không phải số dư ví ứng dụng.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 58,
+    "question": "Quy trình xử lý khi giao hàng thất bại gồm những bước nào?",
+    "ground_truth": "Khi giao hàng thất bại, tài xế vào chi tiết chuyến đi và chọn 'Thất bại', sau đó chọn lý do, xác nhận bằng hình ảnh, và liên hệ KGH để thống nhất phương án hoàn hàng. Trước đó phải gọi KNH tối thiểu 3 lần trong 15 phút. Sau đó thực hiện hoàn hàng theo quy định trong vòng 24 giờ.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 59,
+    "question": "Danh mục hàng hóa cấm vận chuyển gồm những gì?",
+    "ground_truth": "Hàng cấm vận chuyển bao gồm ma túy, kim loại quý, vũ khí, thuốc lá, hàng dễ cháy nổ, tài liệu phản động, động vật sống, tiền tệ, hàng có giá trị trên 2.000.000 VNĐ và các hàng hóa cấm theo pháp luật. Nếu phát hiện hàng cấm, tài xế có quyền từ chối và hủy đơn theo hướng dẫn.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 60,
+    "question": "Quy định chụp ảnh xác thực trong giao hàng là gì?",
+    "ground_truth": "Tài xế bắt buộc chụp ảnh khi lấy hàng, giao hàng thành công, giao thất bại và hoàn hàng. Ảnh phải rõ nét, thấy toàn bộ hàng hóa và biên lai nếu có, chụp nhiều góc để đảm bảo tình trạng niêm phong. Không được dùng ảnh mờ hoặc ảnh của đơn khác, vi phạm có thể bị trừ 100.000 VNĐ/lần và tối đa 3 lần.",
+    "source": "donhang_prompt.txt"
+  },
+  {
+    "id": 61,
+    "question": "Tôi nên làm gì nếu gặp tai nạn nghiêm trọng trong chuyến xe Xanh SM?",
+    "ground_truth": "Bạn cần đảm bảo an toàn và di chuyển khỏi khu vực nguy hiểm nếu có thể, kiểm tra thương tích và gọi cấp cứu 115 nếu cần, báo cảnh sát 113, ghi lại thông tin sự cố (vị trí, thời gian, xe liên quan), liên hệ bảo hiểm để xử lý bồi thường, và giữ bình tĩnh trong suốt quá trình.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 62,
+    "question": "Xanh SM Care là gì và quyền lợi ra sao?",
+    "ground_truth": "Xanh SM Care là dịch vụ bảo hiểm chuyến đi với phí từ 1.000 VNĐ/chuyến, cung cấp quyền lợi bảo hiểm tai nạn lên đến 500 triệu đồng, có thể đăng ký hoặc hủy bất cứ lúc nào trên ứng dụng, phí sẽ được cộng vào mỗi chuyến hợp lệ cho đến khi hủy.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 63,
+    "question": "Tôi nên làm gì khi cảm thấy chuyến xe không an toàn?",
+    "ground_truth": "Bạn nên giữ bình tĩnh, quan sát tình huống, báo ngay cho Xanh SM qua 1900 2097 hoặc cơ quan chức năng nếu cần, chụp ảnh hoặc quay video nếu an toàn, rời khỏi xe nếu nguy hiểm và cảnh báo hành khách khác nếu có thể.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 64,
+    "question": "Nếu thông tin tài xế và xe không giống trên ứng dụng thì phải làm gì?",
+    "ground_truth": "Bạn không nên lên xe, hãy kiểm tra lại thông tin trên ứng dụng, chụp ảnh biển số và tài xế, hủy chuyến và đặt lại xe khác nếu không an toàn, sau đó báo cáo tài xế qua ứng dụng để Xanh SM xử lý.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 65,
+    "question": "Khi tài xế có hành vi quấy rối thì hành khách nên xử lý thế nào?",
+    "ground_truth": "Bạn nên yêu cầu dừng chuyến tại nơi an toàn, giữ bình tĩnh, ghi lại thông tin tài xế và bằng chứng nếu có thể, tìm sự hỗ trợ từ người xung quanh hoặc cơ quan chức năng, và báo cáo tài xế trên ứng dụng sau khi sự việc kết thúc.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 66,
+    "question": "Bảo hiểm hàng hóa Xanh Express bảo vệ những gì?",
+    "ground_truth": "Bảo hiểm hàng hóa Xanh Express bảo vệ hàng hóa trước mất mát hoặc hư hỏng do cháy nổ, trộm cắp, cướp hoặc lỗi tài xế, bồi thường lên đến 100% giá trị hàng hóa theo chứng từ nhưng không vượt quá mức bảo hiểm quy định, và có thể đăng ký/hủy linh hoạt trên ứng dụng.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 67,
+    "question": "Các bước đặt chuyến xe trên ứng dụng Xanh SM gồm những gì?",
+    "ground_truth": "Bạn cần nhập điểm đón và điểm đến, chọn loại xe, chọn phương thức thanh toán và mã khuyến mãi, xác nhận đặt xe, chờ tài xế xác nhận, liên hệ nếu cần, lên xe kiểm tra thông tin, và thanh toán sau khi hoàn thành chuyến đi.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 68,
+    "question": "XanhNow là gì và cách sử dụng như thế nào?",
+    "ground_truth": "XanhNow là tính năng giúp khách hàng kết nối trực tiếp với tài xế mong muốn bằng cách nhập điểm đón, chọn dịch vụ, chọn thanh toán, nhấn XanhNow và đưa mã cho tài xế, sau đó hệ thống sẽ xác nhận kết nối thành công.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 69,
+    "question": "Tôi có thể đặt xe cho người thân không?",
+    "ground_truth": "Bạn có thể đặt xe cho người thân bằng cách chọn dịch vụ, nhập điểm đón và điểm đến, sử dụng tính năng 'Đặt hộ', nhập thông tin người đi, chọn thanh toán, sau đó xác nhận đặt xe. Bạn sẽ chịu trách nhiệm cho chuyến đi đó.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 70,
+    "question": "Tôi nên làm gì nếu bỏ quên đồ trên xe Xanh SM?",
+    "ground_truth": "Bạn cần gọi tài xế hoặc hotline 1900 2097, cung cấp thông tin chuyến đi và đồ bị quên, phối hợp với tài xế để nhận lại đồ nếu tìm thấy, và lưu ý kiểm tra kỹ đồ trước khi rời xe. Xanh SM không cam kết luôn tìm lại được đồ.",
+    "source": "khach_hang.txt"
+  },
+  {
+    "id": 71,
+    "question": "Làm thế nào để trở thành đối tác nhà hàng trên Xanh SM Ngon?",
+    "ground_truth": "Quý đối tác có thể đăng ký tại https://www.xanhsm.com/xanhsm-merchant hoặc tải ứng dụng Xanh SM Merchant để điền form đăng ký và bổ sung đầy đủ thông tin theo yêu cầu hệ thống.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 72,
+    "question": "Cần chuẩn bị những giấy tờ gì để đăng ký làm đối tác Xanh SM Ngon?",
+    "ground_truth": "Tùy loại hình đối tác (Cá nhân, Hộ kinh doanh, Công ty), cần chuẩn bị: CMND/CCCD hoặc hộ chiếu; giấy phép kinh doanh (bắt buộc với hộ kinh doanh và công ty); giấy ủy quyền nếu có; giấy chứng nhận vệ sinh ATTP (bắt buộc với công ty); bộ menu và hình ảnh; tài khoản ngân hàng theo đúng pháp nhân.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 73,
+    "question": "Cách nhận và xử lý đơn hàng trên Xanh SM Merchant như thế nào?",
+    "ground_truth": "Đối tác vào ứng dụng Xanh SM Ngon Merchant, chọn mục 'Đơn hàng', vào 'Đơn mới' để nhận đơn hoặc bật 'Tự động nhận đơn'. Đơn đã xác nhận được quản lý tại mục 'Đã xác nhận'.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 74,
+    "question": "Khi nào nhà hàng có thể hủy đơn hàng trên hệ thống?",
+    "ground_truth": "Nhà hàng chỉ nên hủy đơn trong trường hợp bất khả kháng như hết món hoặc lỗi hệ thống. Nếu đơn đã xác nhận và không hủy được trên ứng dụng, cần liên hệ Chăm sóc Khách hàng qua hotline 0247 123 9999 hoặc email cskh@xanhsm.com.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 75,
+    "question": "Phạm vi giao hàng của Xanh SM Ngon được xác định như thế nào?",
+    "ground_truth": "Khoảng cách giao hàng được hệ thống tự động xác định theo vị trí khách hàng và nhà hàng. Thông thường bán kính tiêu chuẩn khoảng 10 km, và có thể mở rộng tùy khu vực hoặc chương trình.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 76,
+    "question": "Doanh thu của nhà hàng trên Xanh SM Ngon được tính như thế nào?",
+    "ground_truth": "Doanh thu là tổng giá trị đơn hàng từ khách hàng trên nền tảng trừ đi các chi phí như hoa hồng, thuế VAT, phí quảng cáo (nếu có) và các khuyến mãi áp dụng bởi nhà hàng.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 77,
+    "question": "Quy trình rút tiền doanh thu trên Xanh SM Merchant như thế nào?",
+    "ground_truth": "Sau khi tài xế xác nhận hoàn tất đơn hàng, hệ thống ghi nhận doanh thu vào ví. Số dư khả dụng là doanh thu đến hết ngày D-1. Nhà hàng rút toàn bộ số dư này, tối thiểu 10.000 VNĐ, tối đa 1 lần/ngày. Tiền về vào ngày làm việc tiếp theo, không tính cuối tuần và ngày lễ.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 78,
+    "question": "Làm thế nào để cập nhật hoặc chỉnh sửa thực đơn trên Xanh SM Merchant?",
+    "ground_truth": "Đối tác vào ứng dụng Xanh SM Ngon, chọn 'Thực đơn' để thêm món, sửa món, xóa món hoặc thay đổi giá. Có thể chỉnh danh mục, topping, và hệ thống cũng hỗ trợ tạo thực đơn thông minh bằng AI từ hình ảnh.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 79,
+    "question": "Tôi phải làm gì nếu không nhận được mã OTP khi đăng nhập?",
+    "ground_truth": "Quý đối tác cần kiểm tra lại số điện thoại đăng ký, đảm bảo không chặn tin nhắn. Nếu vẫn không nhận được OTP, có thể chọn gửi lại mã hoặc liên hệ hotline 0247 123 9999 hoặc email cskh@xanhsm.com.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 80,
+    "question": "Làm sao để liên hệ hỗ trợ khi gặp vấn đề với Xanh SM Ngon?",
+    "ground_truth": "Đối tác có thể liên hệ Chăm sóc Khách hàng qua hotline 0247 123 9999 hoặc email cskh@xanhsm.com để được hỗ trợ.",
+    "source": "nhahang.txt"
+  },
+  {
+    "id": 81,
+    "question": "Người tiêu dùng theo quy định của Quy tắc này được định nghĩa như thế nào?",
+    "ground_truth": "Người tiêu dùng là người mua, sử dụng sản phẩm, hàng hóa, dịch vụ cho mục đích tiêu dùng, sinh hoạt của cá nhân, gia đình, cơ quan, tổ chức và không vì mục đích thương mại theo quy định pháp luật.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 82,
+    "question": "Người tiêu dùng dễ bị tổn thương gồm những nhóm nào?",
+    "ground_truth": "Bao gồm người cao tuổi, người khuyết tật, trẻ em, người dân tộc thiểu số hoặc sống ở vùng khó khăn, phụ nữ mang thai hoặc nuôi con dưới 36 tháng tuổi, người bị bệnh hiểm nghèo và thành viên hộ nghèo theo quy định pháp luật.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 83,
+    "question": "Thông tin người tiêu dùng bao gồm những loại nào?",
+    "ground_truth": "Thông tin người tiêu dùng bao gồm thông tin cá nhân, thông tin về quá trình mua và sử dụng sản phẩm, dịch vụ, và các thông tin liên quan đến giao dịch giữa người tiêu dùng và tổ chức kinh doanh.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 84,
+    "question": "Công ty xử lý thông tin người tiêu dùng nhằm những mục đích gì?",
+    "ground_truth": "Thông tin được xử lý để đánh giá khả năng cung cấp dịch vụ, thực hiện hợp đồng, chăm sóc khách hàng, nâng cao chất lượng dịch vụ, phân tích dữ liệu, phát triển sản phẩm, marketing, phòng chống vi phạm pháp luật và tuân thủ quy định pháp luật.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 85,
+    "question": "Công ty có bán thông tin người tiêu dùng không?",
+    "ground_truth": "Công ty cam kết không bán thông tin người tiêu dùng cho bất kỳ bên nào và chỉ chia sẻ thông tin trong các trường hợp được khách hàng đồng ý, được ủy quyền, theo thỏa thuận hoặc theo yêu cầu của cơ quan nhà nước có thẩm quyền.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 86,
+    "question": "Thông tin người tiêu dùng được lưu trữ trong bao lâu?",
+    "ground_truth": "Thông tin được lưu trữ trong thời gian hợp lý để hoàn thành mục đích xử lý và có thể được lưu ngay cả khi hợp đồng chấm dứt nếu pháp luật hoặc cơ quan nhà nước yêu cầu.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 87,
+    "question": "Các biện pháp kỹ thuật bảo vệ thông tin người tiêu dùng gồm những gì?",
+    "ground_truth": "Bao gồm phân quyền truy cập theo vai trò, xác thực mạnh MFA và SSO, ghi log truy cập, mã hóa dữ liệu, sao lưu định kỳ, kiểm tra an ninh mạng và sử dụng hệ thống lưu trữ an toàn từ các nhà cung cấp uy tín.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 88,
+    "question": "Người tiêu dùng dễ bị tổn thương được ưu tiên hỗ trợ như thế nào?",
+    "ground_truth": "Họ được ưu tiên tiếp nhận và xử lý yêu cầu nhanh hơn, được hướng dẫn cung cấp chứng cứ nếu cần, được hỗ trợ tại điểm giao dịch bằng cách lấy số ưu tiên, và được phản hồi rõ ràng nếu yêu cầu bị từ chối.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 89,
+    "question": "Người tiêu dùng có những quyền gì liên quan đến dữ liệu cá nhân?",
+    "ground_truth": "Người tiêu dùng có quyền được biết, đồng ý hoặc không đồng ý xử lý thông tin, truy cập và chỉnh sửa dữ liệu, rút lại đồng ý, xóa dữ liệu, hạn chế xử lý, yêu cầu cung cấp thông tin, phản đối xử lý, khiếu nại và tự bảo vệ theo pháp luật.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 90,
+    "question": "Công ty GSM có thông tin liên hệ hỗ trợ như thế nào?",
+    "ground_truth": "Công ty Cổ phần Di chuyển Xanh và Thông minh GSM có địa chỉ tại Tòa Văn phòng Symphony, Vinhomes Riverside, Hà Nội, email v.pdp@xanhsm.com và hotline 1900 2097.",
+    "source": "Quy tắc bảo vệ quyền lợi người tiêu dùng.txt"
+  },
+  {
+    "id": 91,
+    "question": "Thu nhập hàng tháng của tài xế GSM bao gồm những gì?",
+    "ground_truth": "Thu nhập hàng tháng của tài xế GSM bao gồm lương cơ bản theo vùng và các khoản thưởng theo chính sách tại thời điểm đó.",
+    "source": "taxi.txt"
+  },
+  {
+    "id": 92,
+    "question": "Tài xế có thể xem chi tiết thu nhập ở đâu trên ứng dụng?",
+    "ground_truth": "Tài xế vào mục 'Thống kê thu nhập' tại 'Danh sách tổng quan' bên trái màn hình ứng dụng và kéo xuống để xem chi tiết theo ngày, tuần hoặc tháng.",
+    "source": "taxi.txt"
+  },
+  {
+    "id": 93,
+    "question": "Ngoài lương thưởng, tài xế GSM được hưởng những chính sách gì?",
+    "ground_truth": "Tài xế được khám sức khỏe định kỳ, tham gia BHXH khi ký hợp đồng chính thức, được đào tạo bài bản về ngành vận tải, được tư vấn lộ trình phát triển nghề nghiệp và các chế độ phúc lợi khác theo chính sách công ty.",
+    "source": "taxi.txt"
+  },
+  {
+    "id": 94,
+    "question": "Tài xế có phải trả chi phí đào tạo không?",
+    "ground_truth": "Tài xế được đào tạo miễn phí về kiến thức sản phẩm và tiêu chuẩn dịch vụ của GSM.",
+    "source": "taxi.txt"
+  },
+  {
+    "id": 95,
+    "question": "Khi nào tài xế phải nộp lý lịch tư pháp mẫu số 01?",
+    "ground_truth": "Từ 01/10/2025, tài xế nộp lý lịch tư pháp số 01 ngay sau khi trúng tuyển cùng CCCD, giấy phép lái xe, giấy khám sức khỏe cho Phòng Tuyển Dụng GSM và có thể nộp giấy hẹn trước, bổ sung bản gốc/điện tử trong vòng 30 ngày.",
+    "source": "taxi.txt"
+  },
+  {
+    "id": 96,
+    "question": "Tài xế có phải trả tiền khi nhận xe không?",
+    "ground_truth": "Tài xế phải đóng cọc phụ phí trách nhiệm 10.000.000đ và không phải thanh toán thêm bất kỳ khoản tiền nào khác khi nhận xe.",
+    "source": "taxi.txt"
+  },
+  {
+    "id": 97,
+    "question": "Khoản cọc phụ phí trách nhiệm được hoàn lại khi nào?",
+    "ground_truth": "Khoản cọc được hoàn lại sau khi hoàn tất hồ sơ nghỉ việc, xác nhận công nợ và các khoản truy thu khác (nếu có).",
+    "source": "taxi.txt"
+  },
+  {
+    "id": 98,
+    "question": "Tài xế được nhận xe theo hình thức nào?",
+    "ground_truth": "Có hai hình thức: một tài xế nhận một xe hoặc hai tài xế nhận chung một xe.",
+    "source": "taxi.txt"
+  },
+  {
+    "id": 99,
+    "question": "Chi phí bảo dưỡng xe do ai chi trả?",
+    "ground_truth": "Chi phí bảo dưỡng định kỳ do công ty thanh toán.",
+    "source": "taxi.txt"
+  },
+  {
+    "id": 100,
+    "question": "Hệ thống camera và giám sát S2S trên xe taxi GSM hoạt động như thế nào?",
+    "ground_truth": "Từ 13/04/2025, GSM triển khai hệ thống S2S với camera kép trong cabin và phía trước xe, nút bấm khẩn cấp, ghi âm nội bộ, cảm biến và AI phân tích hành vi. Dữ liệu được mã hóa và chỉ truy xuất theo yêu cầu chính thức từ cơ quan chức năng.",
+    "source": "taxi.txt"
+  }
 ]
